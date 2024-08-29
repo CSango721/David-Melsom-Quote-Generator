@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>David Melsom Quote Generator</title>
+<link rel="stylesheet" href="style.css"> 
+
+<style>
+ body {
+   font-family: Arial, sans-serif;
+   text-align: center;
+   background-color: #fff;
+ }
+ #quote {
+   margin: 50px auto;
+   padding: 20px;
+   background-color: #fff;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   max-width: 600px;
+ }
+ #quote p {
+   font-size: 24px;
+   margin: 0;
+ }
+ #new-quote-btn {
+   margin-top: 20px;
+   padding: 10px 20px;
+   font-size: 18px;
+   background-color: #007bff;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+ }
+ #new-quote-btn:hover {
+   background-color: #0056b3;
+ }
+</style>
+</head>
+<body>
+<div id="quote">
+ <p id="quote-text">Click the button to get a new David Melsom quote!</p>
+ <button id="new-quote-btn">New David Melsom Quote</button>
+</div>
+
+<script>
+ const quotes = [
+   {
+     text: "If Coach doesn't play me, I wont play."
+   },
+   {
+     text: "The tee box is level and un-level and i'm just trying to find same spot turf."
+   },
+   {
+     text: "The tee box is level and un-level and i'm just trying to find same spot turf."
+   },
+   {
+     text: "I play good if I putt it in."
+   },
+   {
+     text: "NIPPLES!"
+   },
+   {
+     text: "I'm trying to sneeze. stop giving me laugh!"
+   },
+   
+ ];
+
+ function getRandomQuote() {
+   return quotes[Math.floor(Math.random() * quotes.length)];
+ }
+
+ function displayQuote() {
+   const { text } = getRandomQuote();
+   document.getElementById("quote-text").textContent = text;
+ }
+
+ document.getElementById("new-quote-btn").addEventListener("click", displayQuote);
+
+ displayQuote();
+</script>
+</body>
+</html>
