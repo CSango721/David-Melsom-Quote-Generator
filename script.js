@@ -5,6 +5,7 @@ const quotes = [
     { quote: "NIPPLES!" },
     { quote: "I'm trying to sneeze. stop giving me laugh!"},
     { quote: "What is the junior rate on the kangaroo?},
+    { quote: "Mid sauce from 180"}
 ]
 
 function generateQuote() {
