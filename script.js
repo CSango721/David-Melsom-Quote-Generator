@@ -2,7 +2,6 @@ const quotes = [
     { quote: "If Coach Doesn't play me, I wont play." },
     { quote: "The tee box is level and un-level and i'm just trying to find same spot turf." },
     { quote: "I play good if I putt it in." },
-    { quote: "NIPPLES!" },
     { quote: "I'm trying to sneeze. stop giving me laugh!"},
     { quote: "What is the junior rate on the kangaroo?},
     { quote: "Mid sauce from 180"}
